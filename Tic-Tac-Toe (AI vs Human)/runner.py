@@ -5,10 +5,10 @@ import time
 import tictactoe as ttt
 
 pygame.init()
-size = width, height = 600, 400
+size = width, height = 500, 500
 
-black = (0, 0, 0)
-white = (255, 255, 255)
+black = (43, 222, 180)
+white = (0, 0, 0)
 
 screen = pygame.display.set_mode(size)
 
@@ -34,18 +34,18 @@ while True:
         # Draw title
         title = largeFont.render("Play Tic-Tac-Toe", True, white)
         titleRect = title.get_rect()
-        titleRect.center = ((width / 2), 50)
+        titleRect.center = ((width / 2), 120)
         screen.blit(title, titleRect)
 
         # Draw buttons
-        playXButton = pygame.Rect((width / 8), (height / 2), width / 4, 50)
+        playXButton = pygame.Rect((width / 8), (height / 2), width / 4 +10, 50)
         playX = mediumFont.render("Play as X", True, black)
         playXRect = playX.get_rect()
         playXRect.center = playXButton.center
         pygame.draw.rect(screen, white, playXButton)
         screen.blit(playX, playXRect)
 
-        playOButton = pygame.Rect(5 * (width / 8), (height / 2), width / 4, 50)
+        playOButton = pygame.Rect(5 * (width / 8), (height / 2), width / 4 +10, 50)
         playO = mediumFont.render("Play as O", True, black)
         playORect = playO.get_rect()
         playORect.center = playOButton.center
@@ -66,7 +66,7 @@ while True:
     else:
 
         # Draw game board
-        tile_size = 80
+        tile_size = 100
         tile_origin = (width / 2 - (1.5 * tile_size),
                        height / 2 - (1.5 * tile_size))
         tiles = []
@@ -78,7 +78,7 @@ while True:
                     tile_origin[1] + i * tile_size,
                     tile_size, tile_size
                 )
-                pygame.draw.rect(screen, white, rect, 3)
+                pygame.draw.rect(screen, white, rect, 4)
 
                 if board[i][j] != ttt.EMPTY:
                     move = moveFont.render(board[i][j], True, white)
@@ -104,13 +104,13 @@ while True:
             title = f"Computer thinking..."
         title = largeFont.render(title, True, white)
         titleRect = title.get_rect()
-        titleRect.center = ((width / 2), 30)
+        titleRect.center = ((width / 2), 40)
         screen.blit(title, titleRect)
 
         # Check for AI move
         if user != player and not game_over:
             if ai_turn:
-                time.sleep(0.5)
+                time.sleep(1)
                 move = ttt.minimax(board)
                 board = ttt.result(board, move)
                 ai_turn = False
