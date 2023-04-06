@@ -69,11 +69,11 @@ Here's a modified description of the algorithm with alpha-beta pruning, assuming
 - Otherwise get a list of new game states for every possible move.
 - Initialize alpha to negative infinity and beta to positive infinity.
 - For each of these states:
- - Call the minimax function recursively with the current state, opposite player's turn, alpha, and beta as parameters.
- - If it's X's turn:
-  - Update alpha to the maximum of the current alpha and the returned value from the recursive call.
-  - If alpha is greater than or equal to beta, break out of the loop.
- - If it's O's turn:
-  - Update beta to the minimum of the current beta and the returned value from the recursive call.
-  - If alpha is greater than or equal to beta, break out of the loop.
+    - Call the minimax function recursively with the current state, opposite player's turn, alpha, and beta as parameters.
+    - If it's X's turn:
+        - Update alpha to the maximum of the current alpha and the returned value from the recursive call.
+        - If alpha is greater than or equal to beta, break out of the loop.
+    - If it's O's turn:
+        - Update beta to the minimum of the current beta and the returned value from the recursive call.
+        - If alpha is greater than or equal to beta, break out of the loop.
 - If it's X's turn, return the maximum score from the scores list
