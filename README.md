@@ -22,7 +22,9 @@ If Python is not installed on your system, you can download and install it from 
 
 
 1. Clone the repository using the following command: \
-   `git clone https://github.com/aman247av/AI-Projects.git`
+   ```
+   git clone https://github.com/aman247av/AI-Projects.git
+   ```
    
 2. Navigate to the project folder using the following command: \
    `cd AI-Projects/<project-name>`
