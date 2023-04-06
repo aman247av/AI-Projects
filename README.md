@@ -22,14 +22,22 @@ If Python is not installed on your system, you can download and install it from 
 
 
 1. Clone the repository using the following command: 
-   ```git clone https://github.com/aman247av/AI-Projects.git```
+   ```
+   git clone https://github.com/aman247av/AI-Projects.git
+   ```
    
 2. Navigate to the project folder using the following command: 
-   ```cd AI-Projects/<project-name>```
+   ```
+   cd AI-Projects/<project-name>
+   ```
 
 3. Install the required packages using the following command: 
-   ```pip install -r requirements.txt```
+   ```
+   pip install -r requirements.txt
+   ```
    
 4. Run the project using the following command: 
-   ```python runner.py```
+   ```
+   python runner.py
+   ```
 
