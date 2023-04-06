@@ -102,9 +102,9 @@ def terminal(board):
 def utility(board):
     
     if winner(board)==X:
-        return 1
+        return 10
     elif winner(board)==O:
-        return -1
+        return -10
     else:
         return 0
 
