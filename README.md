@@ -1,7 +1,7 @@
-# AI Projects (CS235 / CS50 AI)
+# AI Projects (CS235 / CS50AI)
 This repository contains interactive projects related to Artificial Intelligence, which were developed as part of the CS 235 course at IIIT Guwahati.
 
-Reference has been taken from Harvard's CS50 AI course and TechWithTim.
+Reference has been taken from Harvard's CS50AI course and TechWithTim.
 
 ## Projects
 1. Tic Tac Toe 
