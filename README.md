@@ -1,5 +1,5 @@
 # AI Projects (CS235 / CS50 AI)
-This repository contains projects related to Artificial Intelligence, which were developed as part of the CS 235 course at IIIT Guwahati.
+This repository contains optional/interactive projects related to Artificial Intelligence, which were developed as part of the CS 235 course at IIIT Guwahati.
 
 Reference has been taken from Harvard's CS50 AI course and TechWithTim.
 
