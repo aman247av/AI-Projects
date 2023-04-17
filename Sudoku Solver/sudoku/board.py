@@ -1,5 +1,5 @@
 import pygame
-from sudoko.constants import *
+from sudoku.constants import *
 
 # Initialize Pygame
 pygame.init()
