@@ -1,6 +1,6 @@
 from copy import deepcopy
 from checkers.constants import *
-import math
+import math 
 
 
 #define the minimax algorithm function
